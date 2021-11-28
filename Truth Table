@@ -1,0 +1,59 @@
+//to print truth table of number of variables (less than 5) as entered by the user
+
+#include <stdio.h>
+int main()
+{
+int ch=0,i=0,j=0,l=0,k=0;
+printf("Enter the number of variables for which you want truth table  less than 5 :  ");
+scanf("%i",&ch);
+switch(ch)
+{
+case 1:
+    printf("\nA\n");
+    for(i=0;i<=1;i++)
+       printf("%i",i);
+    break;
+        
+case 2:
+       printf("\nA\tB\n");
+       for(i=0;i<=1;i++)
+       {
+            for(j=0;j<=1;j++)
+            {
+                printf("%i\t%i\n",i,j); 
+            }
+        }
+        break;
+        
+case 3:
+        printf("\nA\tB\tC\n");
+       for(i=0;i<=1;i++)
+       {
+            for(j=0;j<=1;j++)
+            {
+            	for(k=0;k<=1;k++)
+                    printf("%i\t%i\t%i\n",i,j,k); 
+            }
+        }
+        break;
+        
+case 4: 
+ printf("\nA\tB\tC\tD\n");
+       for(i=0;i<=1;i++)
+       {
+            for(j=0;j<=1;j++)
+            {
+            	for(k=0;k<=1;k++)
+            	{
+            		for(l=0;l<=1;l++)
+                        printf("%i\t%i\t%i\t%i\n",i,j,k,l); 
+            }
+            }
+        }
+        break;
+
+        	
+default:printf("\nNumber is bigger than the range");
+}
+return 0;
+}
